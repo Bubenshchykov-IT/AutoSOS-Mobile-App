@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customer_welcome_background"
+    tools:context=".CustomerInfoRegistrationActivity">
+
+    <TextView
+        android:id="@+id/registrationTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:text="Ваше ім'я"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/customerInfoName"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/registrationTextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="Ім'я користувача"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/registrationTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/customerInfoName"
+        android:layout_marginTop="5dp"
+        android:text="Номер телефону"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/customerInfoPhone"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registrationTextView2"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="+380 (__) ___-__-__"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/registrationTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/customerInfoPhone"
+        android:layout_marginTop="5dp"
+        android:text="Марка Вашого авто"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/customerInfoCarName"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registrationTextView3"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="Марка та модель авто"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/registrationTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/customerInfoCarName"
+        android:layout_marginTop="5dp"
+        android:text="Номер Вашого авто"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/customerInfoCarNumber"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registrationTextView4"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="Номер авто"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:inputType="text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customerCreateButton"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerInfoCarNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Створити клієнта"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

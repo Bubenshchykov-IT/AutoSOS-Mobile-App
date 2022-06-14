@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customer_welcome_background"
+    tools:context=".CustomerRegistrationActivity">
+
+    <TextView
+        android:id="@+id/registrationTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:text="РЕЄСТРАЦІЯ"
+        android:textSize="45dp"
+        android:textColor="#dd2e44" />
+
+    <TextView
+        android:id="@+id/registrationTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registrationTextView1"
+        android:layout_marginTop="5dp"
+        android:text="Email-адреса"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/registrationEmailCustomerEditText"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registrationTextView2"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="Електронна пошта"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/registrationTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registrationEmailCustomerEditText"
+        android:layout_marginTop="5dp"
+        android:text="Пароль"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/registrationPasswordCustomerEditText"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registrationTextView3"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="**********"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:inputType="textPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registrationCustomerButton"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registrationPasswordCustomerEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Продовжити"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

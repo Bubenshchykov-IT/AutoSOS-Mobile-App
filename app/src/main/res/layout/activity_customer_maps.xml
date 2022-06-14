@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerMapsActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calCurrentDriverButton"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/driverInfoRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/map_edittext_style"
+        android:text="Подзвонити водію евакуатора"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/driverInfoRelativeLayout"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rel2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/map_edittext_style">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/driverImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/avatar_driver_image"
+            map:civ_border_color="#dd2e44"
+            map:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/driverMapsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/driverImage"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/driverMapsPhoneNumber"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverMapsName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/driverImage"
+            android:text="380000000000"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="5dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/driverMapsPhoneNumber"
+            android:background="#dd2e44" />
+
+        <TextView
+            android:id="@+id/driverMapsCarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/view"
+            android:text="Car Info"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/driverMapsCarNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverMapsCarInfo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/view"
+            android:text="Car Number"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/locationRelativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/map_edittext_style">
+
+        <TextView
+            android:id="@+id/locationEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Приємного користування"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customerCancelOrderButton"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/locationRelativeLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/map_edittext_style"
+        android:text="Відмінити"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/customerUpdateDriverPosition"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/locationRelativeLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/customerCancelOrderButton"
+        android:background="@drawable/map_edittext_style">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/restart_button" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/customerMenuButton"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/map_edittext_style"
+            android:text="Меню"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/callDriverButton"
+            android:layout_width="265dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@+id/customerMenuButton"
+            android:background="@drawable/map_edittext_style"
+            android:text="Викликати евакуатор"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AutoSOS</string>
+    <string name="title_activity_customer_maps">CustomerMapsActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

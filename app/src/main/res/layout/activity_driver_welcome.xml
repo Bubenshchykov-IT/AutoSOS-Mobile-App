@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driver_welcome_background"
+    tools:context=".DriverWelcomeActivity">
+
+    <TextView
+        android:id="@+id/welcomeTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="ПРИВІТ"
+        android:textSize="55dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/welcomeTextView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcomeTextView1"
+        android:layout_marginTop="-6dp"
+        android:text="Введіть email-адресу та пароль"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editTextDriverEmail"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcomeTextView2"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="Електронна пошта"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextDriverPassword"
+        android:layout_width="245dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editTextDriverEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/welcome_edittext_style"
+        android:ems="10"
+        android:hint="**********"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/welcomeDriverRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDriverPassword"
+        android:layout_marginTop="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInDriverButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome_button_style"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Увійти"
+        android:textSize="17dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/roleBackDriverButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/signInDriverButton"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/welcome_button_style"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Назад"
+        android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpDriverButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeDriverRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/transparent"
+        android:text="Немає аккаунту"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="165dp"
+        android:layout_height="3dp"
+        android:background="#dd2e44"
+        android:layout_below="@+id/signUpDriverButton"
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

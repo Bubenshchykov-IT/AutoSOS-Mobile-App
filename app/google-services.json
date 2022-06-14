@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "826609268962",
+    "project_id": "autosos-54a43",
+    "storage_bucket": "autosos-54a43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826609268962:android:a027601474084bb88386bb",
+        "android_client_info": {
+          "package_name": "com.example.autosos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826609268962-0nuld6eek3b52o2e0hvl37d2b43bp4ai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.autosos",
+            "certificate_hash": "052e3128dba6157797c0f50bb6773cbab7a5a1d9"
+          }
+        },
+        {
+          "client_id": "826609268962-4gc5nqanvb0dtp2rh4vp6t9nh5srb4sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAanrOdvQuQcVxFyoldBHFBR0aDF-ZjAOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826609268962-4gc5nqanvb0dtp2rh4vp6t9nh5srb4sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
